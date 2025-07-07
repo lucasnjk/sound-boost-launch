@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Play, Users, Clock, Shield, Star } from "lucide-react";
@@ -175,6 +174,41 @@ export default function AudioTurboSalesPage() {
           >
             Quero transformar meu áudio agora
           </Button>
+        </section>
+
+        {/* About Me Section */}
+        <section className="space-y-12">
+          <h2 className="text-3xl md:text-5xl font-bricolage font-bold text-center text-tertiary tracking-tight mb-16">
+            Quem é Lucas do Carmo?
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <div className="bg-primary/50 border border-tertiary/10 rounded-3xl p-8 backdrop-blur-sm overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-secondary/20 to-secondary/10 rounded-2xl flex items-center justify-center border border-secondary/20">
+                  <div className="text-center text-tertiary/60">
+                    <Users className="w-16 h-16 mx-auto mb-4 opacity-50" />
+                    <p className="text-sm">Sua foto aqui</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 md:order-2 space-y-6">
+              <h3 className="text-2xl md:text-3xl font-bricolage font-bold text-tertiary">
+                Quem é Lucas do Carmo?
+              </h3>
+              <div className="bg-primary/50 border border-tertiary/10 rounded-2xl p-8 backdrop-blur-sm">
+                <p className="text-lg text-tertiary/80 leading-relaxed mb-6">
+                  Sou especialista em conteúdo digital e estratégias de funil há mais de 5 anos. Já ajudei centenas de criadores a transformarem seus conteúdos em negócios lucrativos.
+                </p>
+                <p className="text-lg text-tertiary/80 leading-relaxed mb-6">
+                  Descobri que 80% dos criadores perdem seguidores e vendas por causa de áudio ruim, mesmo tendo conteúdo incrível. Por isso criei este método simples que já transformou mais de 2.847 canais.
+                </p>
+                <p className="text-lg text-tertiary/80 leading-relaxed">
+                  Minha missão é simples: fazer seu conteúdo soar profissional, mesmo que você grave apenas com o celular.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* FAQ Section */}

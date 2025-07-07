@@ -20,22 +20,27 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
+				'bricolage': ['Bricolage Grotesque', 'system-ui', 'sans-serif'],
+				'hanken': ['Hanken Grotesk', 'system-ui', 'sans-serif'],
 			},
 			colors: {
+				primary: {
+					DEFAULT: '#191919',
+					foreground: '#FFFFFF'
+				},
+				secondary: {
+					DEFAULT: '#673DE5',
+					foreground: '#FFFFFF'
+				},
+				tertiary: {
+					DEFAULT: '#FFFFFF',
+					foreground: '#191919'
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
-				},
-				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
-				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'

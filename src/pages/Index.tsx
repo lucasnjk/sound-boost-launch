@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Play, Users, Clock, Shield, Star } from "lucide-react";
@@ -108,32 +107,6 @@ export default function AudioTurboSalesPage() {
           </div>
         </section>
 
-        {/* Bonus Section */}
-        <section className="bg-gradient-to-br from-secondary/30 to-secondary/20 border border-secondary/30 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
-          <h2 className="text-3xl md:text-5xl font-bricolage font-bold mb-12 text-center text-tertiary tracking-tight">
-            Bônus exclusivos
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
-            <div className="bg-primary/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
-              <h3 className="font-bricolage font-bold text-xl mb-3 text-secondary">Checklist de Gravação Rápida</h3>
-              <p className="text-tertiary/70 text-lg">Nunca mais esqueça um detalhe importante</p>
-            </div>
-            <div className="bg-primary/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
-              <h3 className="font-bricolage font-bold text-xl mb-3 text-secondary">Template de Configuração Ideal</h3>
-              <p className="text-tertiary/70 text-lg">Copie e cole as configurações perfeitas</p>
-            </div>
-            <div className="bg-primary/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
-              <h3 className="font-bricolage font-bold text-xl mb-3 text-secondary">Mini-aula: Celular Pro</h3>
-              <p className="text-tertiary/70 text-lg">Grave com celular e soe como microfone caro</p>
-            </div>
-          </div>
-          <div className="text-center">
-            <p className="text-xl font-bricolage font-bold text-secondary bg-secondary/20 border border-secondary/30 inline-block px-8 py-4 rounded-2xl backdrop-blur-sm">
-              Valor real agregado: +R$ 97 — somente na pré-venda
-            </p>
-          </div>
-        </section>
-
         {/* Guarantee Section */}
         <section className="bg-gradient-to-br from-green-900/30 to-emerald-900/30 border border-green-500/30 rounded-3xl p-8 md:p-12 text-center backdrop-blur-sm">
           <Shield className="w-20 h-20 text-green-400 mx-auto mb-8" />
@@ -147,34 +120,32 @@ export default function AudioTurboSalesPage() {
         </section>
 
         {/* Pricing Section */}
-        <section className="text-center space-y-10 bg-gradient-to-br from-primary to-primary/90 border border-tertiary/20 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
+        <section className="text-center space-y-8 bg-gradient-to-br from-primary to-primary/90 border border-tertiary/20 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
           <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600/30 to-red-500/30 border border-red-500/50 text-red-200 px-6 py-3 rounded-full text-sm font-medium backdrop-blur-sm">
-              <Clock className="w-4 h-4" />
-              Oferta por tempo limitado
-            </div>
-            
-            <h2 className="text-5xl md:text-7xl font-bricolage font-bold tracking-tight">
-              Apenas R$ <span className="text-secondary">35</span>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold tracking-tight text-tertiary">
+              Adquira agora meu preset <span className="text-secondary">Storm Pro</span>
             </h2>
             
-            <div className="space-y-3">
-              <p className="text-tertiary/60 line-through text-2xl">De R$ 70</p>
-              <p className="text-xl text-tertiary/80">Depois volta pro preço normal. Garante agora!</p>
+            <div className="space-y-2">
+              <p className="text-tertiary/60 line-through text-lg">de R$79,90</p>
+              <div className="text-5xl md:text-7xl font-bricolage font-bold text-secondary tracking-tight">
+                12X R$5,01
+              </div>
+              <p className="text-xl text-tertiary/80">ou R$49,90 à vista.</p>
             </div>
           </div>
           
           <Button size="lg" className="text-xl px-16 py-8 bg-secondary hover:bg-secondary/90 text-tertiary border-0 shadow-2xl shadow-secondary/25 transition-all duration-300 transform hover:scale-105 hover:shadow-secondary/40 font-hanken font-semibold" onClick={handleCTAClick}>
-            Adquira agora meu preset Storm Pro de R$79,90 12X R$5,01 ou R$49,90 à vista
+            Compre Agora
           </Button>
         </section>
 
         {/* About Me Section */}
         <section className="space-y-12">
           <h2 className="text-3xl md:text-5xl font-bricolage font-bold text-center text-tertiary tracking-tight mb-16">Sobre mim</h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="order-2 md:order-1">
-              <div className="bg-primary/50 border border-tertiary/10 rounded-3xl p-8 backdrop-blur-sm overflow-hidden px-[9px] py-[30px] mx-0 my-0">
+              <div className="bg-primary/50 border border-tertiary/10 rounded-3xl p-8 backdrop-blur-sm">
                 <div className="aspect-square bg-gradient-to-br from-secondary/20 to-secondary/10 rounded-2xl flex items-center justify-center border border-secondary/20">
                   <div className="text-center text-tertiary/60">
                     <Users className="w-16 h-16 mx-auto mb-4 opacity-50" />

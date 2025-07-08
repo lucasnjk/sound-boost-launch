@@ -1,12 +1,15 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Play, Users, Clock, Shield, Star } from "lucide-react";
+
 export default function AudioTurboSalesPage() {
   const handleCTAClick = () => {
     console.log("CTA clicked - redirect to payment");
     // Here you would integrate with your payment processor
   };
-  return <main className="min-h-screen bg-primary text-tertiary font-hanken">
+
+  return (
+    <main className="min-h-screen bg-primary text-tertiary font-hanken">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/10 to-secondary/20"></div>
@@ -28,7 +31,11 @@ export default function AudioTurboSalesPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
-              <Button size="lg" className="text-lg px-10 py-6 bg-secondary hover:bg-secondary/90 text-tertiary border-0 shadow-2xl shadow-secondary/25 transition-all duration-300 transform hover:scale-105 hover:shadow-secondary/40 font-hanken font-semibold" onClick={handleCTAClick}>
+              <Button 
+                size="lg" 
+                className="text-lg px-10 py-6 bg-secondary hover:bg-secondary/90 text-tertiary border-0 shadow-2xl shadow-secondary/25 transition-all duration-300 transform hover:scale-105 hover:shadow-secondary/40 font-hanken font-semibold"
+                onClick={handleCTAClick}
+              >
                 <Play className="w-5 h-5 mr-2" />
                 Quero meu áudio profissional
               </Button>
@@ -105,7 +112,30 @@ export default function AudioTurboSalesPage() {
         </section>
 
         {/* Bonus Section */}
-        
+        <section className="bg-gradient-to-br from-secondary/30 to-secondary/20 border border-secondary/30 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
+          <h2 className="text-3xl md:text-5xl font-bricolage font-bold mb-12 text-center text-tertiary tracking-tight">
+            Bônus exclusivos
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            <div className="bg-primary/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
+              <h3 className="font-bricolage font-bold text-xl mb-3 text-secondary">Checklist de Gravação Rápida</h3>
+              <p className="text-tertiary/70 text-lg">Nunca mais esqueça um detalhe importante</p>
+            </div>
+            <div className="bg-primary/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
+              <h3 className="font-bricolage font-bold text-xl mb-3 text-secondary">Template de Configuração Ideal</h3>
+              <p className="text-tertiary/70 text-lg">Copie e cole as configurações perfeitas</p>
+            </div>
+            <div className="bg-primary/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
+              <h3 className="font-bricolage font-bold text-xl mb-3 text-secondary">Mini-aula: Celular Pro</h3>
+              <p className="text-tertiary/70 text-lg">Grave com celular e soe como microfone caro</p>
+            </div>
+          </div>
+          <div className="text-center">
+            <p className="text-xl font-bricolage font-bold text-secondary bg-secondary/20 border border-secondary/30 inline-block px-8 py-4 rounded-2xl backdrop-blur-sm">
+              Valor real agregado: +R$ 97 — somente na pré-venda
+            </p>
+          </div>
+        </section>
 
         {/* Guarantee Section */}
         <section className="bg-gradient-to-br from-green-900/30 to-emerald-900/30 border border-green-500/30 rounded-3xl p-8 md:p-12 text-center backdrop-blur-sm">
@@ -137,14 +167,20 @@ export default function AudioTurboSalesPage() {
             </div>
           </div>
           
-          <Button size="lg" className="text-xl px-16 py-8 bg-secondary hover:bg-secondary/90 text-tertiary border-0 shadow-2xl shadow-secondary/25 transition-all duration-300 transform hover:scale-105 hover:shadow-secondary/40 font-hanken font-semibold" onClick={handleCTAClick}>
+          <Button 
+            size="lg" 
+            className="text-xl px-16 py-8 bg-secondary hover:bg-secondary/90 text-tertiary border-0 shadow-2xl shadow-secondary/25 transition-all duration-300 transform hover:scale-105 hover:shadow-secondary/40 font-hanken font-semibold"
+            onClick={handleCTAClick}
+          >
             Quero transformar meu áudio agora
           </Button>
         </section>
 
         {/* About Me Section */}
         <section className="space-y-12">
-          <h2 className="text-3xl md:text-5xl font-bricolage font-bold text-center text-tertiary tracking-tight mb-16">Sobre mim</h2>
+          <h2 className="text-3xl md:text-5xl font-bricolage font-bold text-center text-tertiary tracking-tight mb-16">
+            Quem é Lucas do Carmo?
+          </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <div className="bg-primary/50 border border-tertiary/10 rounded-3xl p-8 backdrop-blur-sm overflow-hidden">
@@ -161,13 +197,15 @@ export default function AudioTurboSalesPage() {
                 Quem é Lucas do Carmo?
               </h3>
               <div className="bg-primary/50 border border-tertiary/10 rounded-2xl p-8 backdrop-blur-sm">
-                <p className="text-lg text-tertiary/80 leading-relaxed mb-6">Eu sei o que é começar do zero. Antes de viver exclusivamente das redes sociais, trabalhei dandoár diárias em supermercados e passei três anos em uma empresa de estofados, onde comecei na linha de produção e conquistei a posição de social media. Essa trajetória me deu a visão prática e estratégica que aplico hoje como Filmmaker, Designer Gráfico e Social Media.
-
-Com mais de sete anos de experiência no digital, já alcancei +3.5M de views, mais de 3M de alcance em um único mês e contribui para o crescimento de +60k seguidores nas contas que gerencio. Sou formado em Mídias Sociais pela UNESA e atualmente faço Pós-Graduação em Marketing de Alta Performance.
-
-Hoje vivo exclusivamente das redes sociais e tenho a liberdade que tanto sonhei e que muitas outras pessoas sonham. E o Meu objetivo? É fazer com que você possa alcançar essa liberdade também sem varinha de condão ou receita miraculosa.</p>
-                
-                
+                <p className="text-lg text-tertiary/80 leading-relaxed mb-6">
+                  Sou especialista em conteúdo digital e estratégias de funil há mais de 5 anos. Já ajudei centenas de criadores a transformarem seus conteúdos em negócios lucrativos.
+                </p>
+                <p className="text-lg text-tertiary/80 leading-relaxed mb-6">
+                  Descobri que 80% dos criadores perdem seguidores e vendas por causa de áudio ruim, mesmo tendo conteúdo incrível. Por isso criei este método simples que já transformou mais de 2.847 canais.
+                </p>
+                <p className="text-lg text-tertiary/80 leading-relaxed">
+                  Minha missão é simples: fazer seu conteúdo soar profissional, mesmo que você grave apenas com o celular.
+                </p>
               </div>
             </div>
           </div>
@@ -205,5 +243,6 @@ Hoje vivo exclusivamente das redes sociais e tenho a liberdade que tanto sonhei 
           </p>
         </footer>
       </div>
-    </main>;
+    </main>
+  );
 }

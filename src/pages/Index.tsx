@@ -10,7 +10,7 @@ export default function AudioTurboSalesPage() {
   };
 
   return (
-    <main className="min-h-screen bg-primary text-tertiary font-hanken">
+    <main className="min-h-screen bg-black text-tertiary font-hanken">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/10 to-secondary/20"></div>
@@ -52,15 +52,15 @@ export default function AudioTurboSalesPage() {
             Seu áudio pode estar sabotando seu conteúdo
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-primary/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
+            <div className="bg-black/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
               <div className="text-red-400 font-bold text-4xl mb-3 font-bricolage">80%</div>
               <p className="text-tertiary/80 text-lg">das pessoas pulam conteúdos com áudio ruim</p>
             </div>
-            <div className="bg-primary/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
+            <div className="bg-black/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
               <div className="text-red-400 font-bold text-2xl mb-3 font-bricolage">Som fraco</div>
               <p className="text-tertiary/80 text-lg">faz seguidores desistirem antes da proposta</p>
             </div>
-            <div className="bg-primary/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
+            <div className="bg-black/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
               <div className="text-red-400 font-bold text-2xl mb-3 font-bricolage">Você grava</div>
               <p className="text-tertiary/80 text-lg">direitinho, mas é o áudio que estraga tudo</p>
             </div>
@@ -74,14 +74,14 @@ export default function AudioTurboSalesPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-8">
-              <div className="flex items-start gap-6 p-6 bg-primary/50 rounded-2xl border border-tertiary/10 backdrop-blur-sm">
+              <div className="flex items-start gap-6 p-6 bg-black/50 rounded-2xl border border-tertiary/10 backdrop-blur-sm">
                 <CheckCircle className="w-8 h-8 text-green-400 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-bricolage font-bold text-xl text-tertiary mb-2">Como tratar qualquer áudio com IA gratuita</h3>
                   <p className="text-tertiary/70 text-lg">Ferramentas poderosas sem custo algum</p>
                 </div>
               </div>
-              <div className="flex items-start gap-6 p-6 bg-primary/50 rounded-2xl border border-tertiary/10 backdrop-blur-sm">
+              <div className="flex items-start gap-6 p-6 bg-black/50 rounded-2xl border border-tertiary/10 backdrop-blur-sm">
                 <CheckCircle className="w-8 h-8 text-green-400 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-bricolage font-bold text-xl text-tertiary mb-2">Passo a passo simples e direto</h3>
@@ -90,14 +90,14 @@ export default function AudioTurboSalesPage() {
               </div>
             </div>
             <div className="space-y-8">
-              <div className="flex items-start gap-6 p-6 bg-primary/50 rounded-2xl border border-tertiary/10 backdrop-blur-sm">
+              <div className="flex items-start gap-6 p-6 bg-black/50 rounded-2xl border border-tertiary/10 backdrop-blur-sm">
                 <CheckCircle className="w-8 h-8 text-green-400 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-bricolage font-bold text-xl text-tertiary mb-2">Aplicação prática universal</h3>
                   <p className="text-tertiary/70 text-lg">Vídeos, stories, podcasts, aulas e mais</p>
                 </div>
               </div>
-              <div className="flex items-start gap-6 p-6 bg-primary/50 rounded-2xl border border-tertiary/10 backdrop-blur-sm">
+              <div className="flex items-start gap-6 p-6 bg-black/50 rounded-2xl border border-tertiary/10 backdrop-blur-sm">
                 <CheckCircle className="w-8 h-8 text-green-400 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-bricolage font-bold text-xl text-tertiary mb-2">Configurações profissionais</h3>
@@ -121,7 +121,7 @@ export default function AudioTurboSalesPage() {
         </section>
 
         {/* Pricing Section */}
-        <section className="text-center space-y-8 bg-gradient-to-br from-primary to-primary/90 border border-tertiary/20 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
+        <section className="text-center space-y-8 bg-black/90 border border-tertiary/20 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-bricolage font-bold tracking-tight text-tertiary">
               Adquira agora meu preset <span className="text-secondary">Storm Pro</span>
@@ -183,19 +183,19 @@ export default function AudioTurboSalesPage() {
             Perguntas frequentes
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-primary/50 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
+            <div className="bg-black/50 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
               <h3 className="font-bricolage font-bold text-xl mb-3 text-tertiary">Preciso saber editar?</h3>
               <p className="text-tertiary/70 text-lg">Não. O método é feito pra quem nunca editou nada.</p>
             </div>
-            <div className="bg-primary/50 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
+            <div className="bg-black/50 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
               <h3 className="font-bricolage font-bold text-xl mb-3 text-tertiary">Precisa pagar pela ferramenta?</h3>
               <p className="text-tertiary/70 text-lg">Não. É gratuita e fácil de usar.</p>
             </div>
-            <div className="bg-primary/50 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
+            <div className="bg-black/50 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
               <h3 className="font-bricolage font-bold text-xl mb-3 text-tertiary">Quanto tempo pra ver resultado?</h3>
               <p className="text-tertiary/70 text-lg">Menos de 1 minuto após aplicar o método.</p>
             </div>
-            <div className="bg-primary/50 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
+            <div className="bg-black/50 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
               <h3 className="font-bricolage font-bold text-xl mb-3 text-tertiary">Tem garantia?</h3>
               <p className="text-tertiary/70 text-lg">Sim! 7 dias incondicionais.</p>
             </div>
@@ -203,9 +203,9 @@ export default function AudioTurboSalesPage() {
         </section>
 
         {/* Footer */}
-        <footer className="text-center py-16 border-t border-tertiary/20">
+        <footer className="text-center py-2.5 border-t border-tertiary/20">
           <p className="text-tertiary/50 text-lg">
-            Desenvolvido por [Seu Nome] — especialista em conteúdo e estratégia de funil.
+            © 2025 | lucasnjk – Todos os Direitos Reservados.
           </p>
         </footer>
       </div>

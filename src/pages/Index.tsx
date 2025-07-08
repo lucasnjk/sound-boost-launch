@@ -13,7 +13,7 @@ export default function AudioTurboSalesPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-secondary/20 via-transparent to-transparent"></div>
         <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-32">
           <div className="text-center space-y-8">
-            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-secondary/30 text-secondary px-6 py-3 rounded-full text-sm font-medium backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 border border-secondary/30 text-secondary rounded-full text-sm font-medium backdrop-blur-sm bg-[#454545]/0 px-[34px] py-[14px]">
               <Star className="w-4 h-4" />
               Pré-venda por tempo limitado
             </div>

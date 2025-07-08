@@ -1,12 +1,16 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Play, Users, Clock, Shield, Star } from "lucide-react";
+
 export default function AudioTurboSalesPage() {
   const handleCTAClick = () => {
     console.log("CTA clicked - redirect to payment");
     // Here you would integrate with your payment processor
   };
-  return <main className="min-h-screen bg-primary text-tertiary font-hanken">
+
+  return (
+    <main className="min-h-screen bg-primary text-tertiary font-hanken">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/10 to-secondary/20"></div>
@@ -161,7 +165,7 @@ export default function AudioTurboSalesPage() {
           </div>
           
           <Button size="lg" className="text-xl px-16 py-8 bg-secondary hover:bg-secondary/90 text-tertiary border-0 shadow-2xl shadow-secondary/25 transition-all duration-300 transform hover:scale-105 hover:shadow-secondary/40 font-hanken font-semibold" onClick={handleCTAClick}>
-            Quero transformar meu áudio agora
+            Adquira agora meu preset Storm Pro de R$79,90 12X R$5,01 ou R$49,90 à vista
           </Button>
         </section>
 
@@ -224,5 +228,6 @@ export default function AudioTurboSalesPage() {
           </p>
         </footer>
       </div>
-    </main>;
+    </main>
+  );
 }

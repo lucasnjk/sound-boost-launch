@@ -11,6 +11,13 @@ export default function AudioTurboSalesPage() {
 
   return (
     <main className="min-h-screen bg-black text-tertiary font-hanken">
+      {/* Promotional Banner */}
+      <div className="w-full bg-secondary text-tertiary text-center py-3 px-4">
+        <p className="text-sm md:text-base font-semibold">
+          Oferta EXCLUSIVA por tempo limitado: de R$79,90 por R$49,90
+        </p>
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/10 to-secondary/20"></div>
@@ -64,6 +71,37 @@ export default function AudioTurboSalesPage() {
               <div className="text-red-400 font-bold text-2xl mb-3 font-bricolage">Você grava</div>
               <p className="text-tertiary/80 text-lg">direitinho, mas é o áudio que estraga tudo</p>
             </div>
+          </div>
+        </section>
+
+        {/* Promotional Section */}
+        <section className="bg-gradient-to-br from-secondary/30 to-secondary/20 border border-secondary/40 rounded-3xl p-8 md:p-12 text-center backdrop-blur-sm">
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-5xl font-bricolage font-bold text-tertiary tracking-tight">
+              Adquira agora o preset <span className="text-secondary">Storm Pro</span>
+            </h2>
+            
+            <div className="space-y-4">
+              <p className="text-tertiary/70 text-lg">
+                O método completo para transformar qualquer áudio em som profissional usando IA gratuita
+              </p>
+              
+              <div className="space-y-2">
+                <p className="text-tertiary/60 line-through text-lg">de R$79,90</p>
+                <div className="text-4xl md:text-6xl font-bricolage font-bold text-secondary tracking-tight">
+                  12X R$5,01
+                </div>
+                <p className="text-xl text-tertiary/80">ou R$49,90 à vista.</p>
+              </div>
+            </div>
+            
+            <Button size="lg" className="text-xl px-16 py-8 bg-secondary hover:bg-secondary/90 text-tertiary border-0 shadow-2xl shadow-secondary/25 transition-all duration-300 transform hover:scale-105 hover:shadow-secondary/40 font-hanken font-semibold" onClick={handleCTAClick}>
+              Compre Agora - Oferta Limitada
+            </Button>
+            
+            <p className="text-sm text-tertiary/60">
+              ⏰ Esta oferta expira em breve!
+            </p>
           </div>
         </section>
 

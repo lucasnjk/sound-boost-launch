@@ -11,6 +11,7 @@ import { PricingSection } from "@/components/PricingSection";
 import { AboutMeSection } from "@/components/AboutMeSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
+import { ScrollAnimationWrapper } from "@/components/ScrollAnimationWrapper";
 
 export default function AudioTurboSalesPage() {
   const handleCTAClick = () => {
@@ -25,15 +26,41 @@ export default function AudioTurboSalesPage() {
       <HeroSection onCTAClick={handleCTAClick} />
 
       <div className="max-w-6xl mx-auto px-4 space-y-24">
-        <ProblemSection />
-        <AudioTreatmentFeatures />
-        <PromotionalSection onCTAClick={handleCTAClick} />
-        <SolutionSection />
-        <GuaranteeSection />
-        <PricingSection onCTAClick={handleCTAClick} />
-        <AboutMeSection />
-        <FAQSection />
-        <Footer />
+        <ScrollAnimationWrapper delay={0.1}>
+          <ProblemSection />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper delay={0.2} direction="left">
+          <AudioTreatmentFeatures />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper delay={0.1} direction="right">
+          <PromotionalSection onCTAClick={handleCTAClick} />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper delay={0.2}>
+          <SolutionSection />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper delay={0.1} direction="left">
+          <GuaranteeSection />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper delay={0.2}>
+          <PricingSection onCTAClick={handleCTAClick} />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper delay={0.1} direction="right">
+          <AboutMeSection />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper delay={0.2}>
+          <FAQSection />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper delay={0.1}>
+          <Footer />
+        </ScrollAnimationWrapper>
       </div>
     </main>
   );

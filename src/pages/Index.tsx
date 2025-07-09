@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Play, Users, Clock, Shield, Star, Download, Camera, Zap, MousePointer } from "lucide-react";
+import { CheckCircle, Play, Users, Clock, Shield, Star, Mic, Waveform, Sparkles, Zap } from "lucide-react";
 
 export default function AudioTurboSalesPage() {
   const handleCTAClick = () => {
@@ -13,7 +13,7 @@ export default function AudioTurboSalesPage() {
       {/* Promotional Banner */}
       <div className="w-full bg-secondary text-tertiary text-center py-3 px-4">
         <p className="text-sm md:text-base font-semibold">
-          Oferta EXCLUSIVA por tempo limitado: de R$79,90 por R$49,90
+          Oferta EXCLUSIVA por tempo limitado: R$89,90 por R$40,00
         </p>
       </div>
 
@@ -73,39 +73,39 @@ export default function AudioTurboSalesPage() {
           </div>
         </section>
 
-        {/* Preset Features Section */}
+        {/* Audio Treatment Features Section */}
         <section className="space-y-12">
           <div className="text-center space-y-6">
             <h2 className="text-3xl md:text-5xl font-bricolage font-bold text-secondary tracking-tight">
-              Um preset prático, feito para você que busca uma edição rápida.
+              Tratamento de áudio profissional com IA em apenas 1 minuto
             </h2>
             <p className="text-xl text-tertiary/80 max-w-4xl mx-auto leading-relaxed">
-              Desenvolvido para combinar com qualquer estilo de foto para o seu perfil do Instagram. 
-              Criando um perfil harmônico, sem precisar organizar as linhas do seu Feed.
+              Transforme qualquer áudio gravado com celular em som de estúdio profissional usando inteligência artificial gratuita. 
+              Sem complicação, sem software caro, sem conhecimento técnico.
             </p>
           </div>
           
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center space-y-6">
               <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto shadow-lg shadow-secondary/25">
-                <Download className="w-10 h-10 text-white" />
+                <Mic className="w-10 h-10 text-white" />
               </div>
               <div className="space-y-3">
-                <h3 className="font-bricolage font-bold text-xl text-secondary">Fácil Instalação</h3>
+                <h3 className="font-bricolage font-bold text-xl text-secondary">Qualquer Gravação</h3>
                 <p className="text-tertiary/70 text-base leading-relaxed">
-                  Receba um tutorial passo a passo para configurar rapidamente seu preset, compatível com IOS e Android.
+                  Funciona com áudio do celular, notebook, câmera ou qualquer dispositivo. Não importa a qualidade inicial.
                 </p>
               </div>
             </div>
             
             <div className="text-center space-y-6">
               <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto shadow-lg shadow-secondary/25">
-                <Camera className="w-10 h-10 text-white" />
+                <Sparkles className="w-10 h-10 text-white" />
               </div>
               <div className="space-y-3">
-                <h3 className="font-bricolage font-bold text-xl text-secondary">Qualidade Profissional</h3>
+                <h3 className="font-bricolage font-bold text-xl text-secondary">IA Gratuita</h3>
                 <p className="text-tertiary/70 text-base leading-relaxed">
-                  O preset foi desenvolvido para você atingir um estilo dark aesthetic em poucos minutos.
+                  Utilizamos ferramentas de inteligência artificial 100% gratuitas e acessíveis para todos.
                 </p>
               </div>
             </div>
@@ -115,21 +115,21 @@ export default function AudioTurboSalesPage() {
                 <Zap className="w-10 h-10 text-white" />
               </div>
               <div className="space-y-3">
-                <h3 className="font-bricolage font-bold text-xl text-secondary">Acesso Imediato</h3>
+                <h3 className="font-bricolage font-bold text-xl text-secondary">Resultado Imediato</h3>
                 <p className="text-tertiary/70 text-base leading-relaxed">
-                  Baixe o preset instantaneamente após a confirmação da compra e comece a editar as suas fotos.
+                  Em menos de 1 minuto você já tem seu áudio com qualidade profissional pronto para usar.
                 </p>
               </div>
             </div>
             
             <div className="text-center space-y-6">
               <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto shadow-lg shadow-secondary/25">
-                <MousePointer className="w-10 h-10 text-white" />
+                <Waveform className="w-10 h-10 text-white" />
               </div>
               <div className="space-y-3">
-                <h3 className="font-bricolage font-bold text-xl text-secondary">Edição com Um Clique</h3>
+                <h3 className="font-bricolage font-bold text-xl text-secondary">Som Profissional</h3>
                 <p className="text-tertiary/70 text-base leading-relaxed">
-                  Aplique facilmente o preset e personalize os ajustes para refletir o seu estilo único.
+                  Remove ruídos, equaliza frequências e deixa sua voz limpa como se fosse gravada em estúdio.
                 </p>
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function AudioTurboSalesPage() {
         <section className="bg-gradient-to-br from-secondary/30 to-secondary/20 border border-secondary/40 rounded-3xl p-8 md:p-12 text-center backdrop-blur-sm">
           <div className="space-y-6">
             <h2 className="text-3xl md:text-5xl font-bricolage font-bold text-tertiary tracking-tight">
-              Adquira agora o preset <span className="text-secondary">Storm Pro</span>
+              Adquira agora o <span className="text-secondary">AudioTurbo Pro</span>
             </h2>
             
             <div className="space-y-4">
@@ -149,11 +149,11 @@ export default function AudioTurboSalesPage() {
               </p>
               
               <div className="space-y-2">
-                <p className="text-tertiary/60 line-through text-lg">de R$79,90</p>
+                <p className="text-tertiary/60 line-through text-lg">de R$89,90</p>
                 <div className="text-4xl md:text-6xl font-bricolage font-bold text-secondary tracking-tight">
-                  12X R$5,01
+                  5X R$8,00
                 </div>
-                <p className="text-xl text-tertiary/80">ou R$49,90 à vista.</p>
+                <p className="text-xl text-tertiary/80">ou R$40,00 à vista.</p>
               </div>
             </div>
             
@@ -224,15 +224,15 @@ export default function AudioTurboSalesPage() {
         <section className="text-center space-y-8 bg-black/90 border border-tertiary/20 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-bricolage font-bold tracking-tight text-tertiary">
-              Adquira agora meu preset <span className="text-secondary">Storm Pro</span>
+              Adquira agora o <span className="text-secondary">AudioTurbo Pro</span>
             </h2>
             
             <div className="space-y-2">
-              <p className="text-tertiary/60 line-through text-lg">de R$79,90</p>
+              <p className="text-tertiary/60 line-through text-lg">de R$89,90</p>
               <div className="text-5xl md:text-7xl font-bricolage font-bold text-secondary tracking-tight">
-                12X R$5,01
+                5X R$8,00
               </div>
-              <p className="text-xl text-tertiary/80">ou R$49,90 à vista.</p>
+              <p className="text-xl text-tertiary/80">ou R$40,00 à vista.</p>
             </div>
           </div>
           

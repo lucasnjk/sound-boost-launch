@@ -1,7 +1,6 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Play, Users, Clock, Shield, Star } from "lucide-react";
+import { CheckCircle, Play, Users, Clock, Shield, Star, Download, Camera, Zap, MousePointer } from "lucide-react";
 
 export default function AudioTurboSalesPage() {
   const handleCTAClick = () => {
@@ -70,6 +69,69 @@ export default function AudioTurboSalesPage() {
             <div className="bg-black/80 border border-tertiary/10 p-8 rounded-2xl backdrop-blur-sm">
               <div className="text-red-400 font-bold text-2xl mb-3 font-bricolage">Você grava</div>
               <p className="text-tertiary/80 text-lg">direitinho, mas é o áudio que estraga tudo</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Preset Features Section */}
+        <section className="space-y-12">
+          <div className="text-center space-y-6">
+            <h2 className="text-3xl md:text-5xl font-bricolage font-bold text-secondary tracking-tight">
+              Um preset prático, feito para você que busca uma edição rápida.
+            </h2>
+            <p className="text-xl text-tertiary/80 max-w-4xl mx-auto leading-relaxed">
+              Desenvolvido para combinar com qualquer estilo de foto para o seu perfil do Instagram. 
+              Criando um perfil harmônico, sem precisar organizar as linhas do seu Feed.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center space-y-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto shadow-lg shadow-secondary/25">
+                <Download className="w-10 h-10 text-white" />
+              </div>
+              <div className="space-y-3">
+                <h3 className="font-bricolage font-bold text-xl text-secondary">Fácil Instalação</h3>
+                <p className="text-tertiary/70 text-base leading-relaxed">
+                  Receba um tutorial passo a passo para configurar rapidamente seu preset, compatível com IOS e Android.
+                </p>
+              </div>
+            </div>
+            
+            <div className="text-center space-y-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto shadow-lg shadow-secondary/25">
+                <Camera className="w-10 h-10 text-white" />
+              </div>
+              <div className="space-y-3">
+                <h3 className="font-bricolage font-bold text-xl text-secondary">Qualidade Profissional</h3>
+                <p className="text-tertiary/70 text-base leading-relaxed">
+                  O preset foi desenvolvido para você atingir um estilo dark aesthetic em poucos minutos.
+                </p>
+              </div>
+            </div>
+            
+            <div className="text-center space-y-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto shadow-lg shadow-secondary/25">
+                <Zap className="w-10 h-10 text-white" />
+              </div>
+              <div className="space-y-3">
+                <h3 className="font-bricolage font-bold text-xl text-secondary">Acesso Imediato</h3>
+                <p className="text-tertiary/70 text-base leading-relaxed">
+                  Baixe o preset instantaneamente após a confirmação da compra e comece a editar as suas fotos.
+                </p>
+              </div>
+            </div>
+            
+            <div className="text-center space-y-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto shadow-lg shadow-secondary/25">
+                <MousePointer className="w-10 h-10 text-white" />
+              </div>
+              <div className="space-y-3">
+                <h3 className="font-bricolage font-bold text-xl text-secondary">Edição com Um Clique</h3>
+                <p className="text-tertiary/70 text-base leading-relaxed">
+                  Aplique facilmente o preset e personalize os ajustes para refletir o seu estilo único.
+                </p>
+              </div>
             </div>
           </div>
         </section>

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { PromotionalBanner } from "@/components/PromotionalBanner";
 import { HeroSection } from "@/components/HeroSection";
@@ -7,7 +8,6 @@ import { PromotionalSection } from "@/components/PromotionalSection";
 import { SolutionSection } from "@/components/SolutionSection";
 import { GuaranteeSection } from "@/components/GuaranteeSection";
 import { PricingSection } from "@/components/PricingSection";
-import { AboutMeSection } from "@/components/AboutMeSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { ScrollAnimationWrapper } from "@/components/ScrollAnimationWrapper";
@@ -48,15 +48,11 @@ export default function AudioTurboSalesPage() {
           <PricingSection onCTAClick={handleCTAClick} />
         </ScrollAnimationWrapper>
 
-        <ScrollAnimationWrapper delay={0.1} direction="right">
-          <AboutMeSection />
-        </ScrollAnimationWrapper>
-
-        <ScrollAnimationWrapper delay={0.2}>
+        <ScrollAnimationWrapper delay={0.1}>
           <FAQSection />
         </ScrollAnimationWrapper>
 
-        <ScrollAnimationWrapper delay={0.1}>
+        <ScrollAnimationWrapper delay={0.2}>
           <Footer />
         </ScrollAnimationWrapper>
       </div>

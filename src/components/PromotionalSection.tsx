@@ -22,7 +22,7 @@ export function PromotionalSection({ onCTAClick }: PromotionalSectionProps) {
           <div className="space-y-2">
             <p className="text-tertiary/60 line-through text-lg">de R$89,90</p>
             <div className="text-4xl md:text-6xl font-bricolage font-bold text-secondary tracking-tight">
-              5X R$8,00
+              5X R$8,86
             </div>
             <p className="text-xl text-tertiary/80">ou R$40,00 à vista.</p>
           </div>

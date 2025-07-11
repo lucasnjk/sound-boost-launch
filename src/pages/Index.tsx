@@ -1,4 +1,3 @@
-
 import React from "react";
 import { PromotionalBanner } from "@/components/PromotionalBanner";
 import { HeroSection } from "@/components/HeroSection";
@@ -15,8 +14,7 @@ import { ScrollAnimationWrapper } from "@/components/ScrollAnimationWrapper";
 
 export default function AudioTurboSalesPage() {
   const handleCTAClick = () => {
-    console.log("CTA clicked - redirect to payment");
-    // Here you would integrate with your payment processor
+    window.open("https://pay.hotmart.com/O100725686T", "_blank");
   };
 
   return (

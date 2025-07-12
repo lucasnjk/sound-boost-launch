@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioTurbo Pro - Transforme seu áudio em som profissional</title>
+    <meta name="description" content="Transforme seu áudio em som profissional com IA em apenas 1 minuto. Mesmo que você grave com o celular e não saiba editar.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'bricolage': ['Bricolage Grotesque', 'system-ui', 'sans-serif'],
+                        'hanken': ['Hanken Grotesk', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#191919',
+                        secondary: '#673DE5',
+                        tertiary: '#FFFFFF',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'float': 'float 4s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease-out;
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .audio-wave {
+            animation: audioWave 0.8s ease-in-out infinite;
+        }
+        @keyframes audioWave {
+            0%, 100% { height: 20px; }
+            50% { height: 60px; }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black text-white font-hanken">
+    <!-- Include promotional banner -->
+    <div id="promotional-banner"></div>
+    
+    <!-- Include hero section -->
+    <div id="hero-section"></div>
+
+    <div class="max-w-6xl mx-auto px-4 space-y-24">
+        <!-- Include problem section -->
+        <div id="problem-section"></div>
+
+        <!-- Include audio treatment features -->
+        <div id="audio-treatment-features"></div>
+
+        <!-- Include promotional section -->
+        <div id="promotional-section"></div>
+
+        <!-- Include solution section -->
+        <div id="solution-section"></div>
+
+        <!-- Include guarantee section -->
+        <div id="guarantee-section"></div>
+
+        <!-- Include pricing section -->
+        <div id="pricing-section"></div>
+
+        <!-- Include FAQ section -->
+        <div id="faq-section"></div>
+
+        <!-- Include footer -->
+        <div id="footer"></div>
+    </div>
+
+    <!-- JavaScript for scroll animations -->
+    <script>
+        // Simple scroll animation
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+        // Initialize animations on page load
+        animateOnScroll();
+
+        // Load components
+        function loadComponent(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById(elementId).innerHTML = html;
+                })
+                .catch(error => console.error('Error loading component:', error));
+        }
+
+        // Load all components
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponent('promotional-banner', 'components/promotional-banner.html');
+            loadComponent('hero-section', 'components/hero-section.html');
+            loadComponent('problem-section', 'components/problem-section.html');
+            loadComponent('audio-treatment-features', 'components/audio-treatment-features.html');
+            loadComponent('promotional-section', 'components/promotional-section.html');
+            loadComponent('solution-section', 'components/solution-section.html');
+            loadComponent('guarantee-section', 'components/guarantee-section.html');
+            loadComponent('pricing-section', 'components/pricing-section.html');
+            loadComponent('faq-section', 'components/faq-section.html');
+            loadComponent('footer', 'components/footer.html');
+        });
+    </script>
+</body>
+</html>

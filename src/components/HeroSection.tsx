@@ -26,7 +26,7 @@ export function HeroSection({ onCTAClick }: HeroSectionProps) {
             transition={{ duration: 0.6 }}
           >
             <Star className="w-4 h-4" />
-            Pré-venda por tempo limitado
+            Lançamento
           </motion.div>
           
           <motion.h1 

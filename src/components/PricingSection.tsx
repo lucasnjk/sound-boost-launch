@@ -15,11 +15,11 @@ export function PricingSection({ onCTAClick }: PricingSectionProps) {
         </h2>
         
         <div className="space-y-2">
-          <p className="text-tertiary/60 line-through text-lg">de R$89,90</p>
+          <p className="text-tertiary/60 line-through text-lg">de R$200,00</p>
           <div className="text-4xl md:text-7xl font-bricolage font-bold text-secondary tracking-tight">
-            5X R$8,86
+            12X R$13,13
           </div>
-          <p className="text-xl text-tertiary/80">ou R$40,00 à vista.</p>
+          <p className="text-xl text-tertiary/80">ou R$127,00 à vista.</p>
         </div>
       </div>
       

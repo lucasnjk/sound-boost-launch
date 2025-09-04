@@ -6,6 +6,7 @@ import { ProblemSection } from "@/components/ProblemSection";
 import { AudioTreatmentFeatures } from "@/components/AudioTreatmentFeatures";
 import { PromotionalSection } from "@/components/PromotionalSection";
 import { SolutionSection } from "@/components/SolutionSection";
+import { BonusSection } from "@/components/BonusSection";
 import { GuaranteeSection } from "@/components/GuaranteeSection";
 import { PricingSection } from "@/components/PricingSection";
 import { FAQSection } from "@/components/FAQSection";
@@ -40,7 +41,11 @@ export default function AudioTurboSalesPage() {
           <SolutionSection />
         </ScrollAnimationWrapper>
 
-        <ScrollAnimationWrapper delay={0.1} direction="left">
+        <ScrollAnimationWrapper delay={0.1} direction="right">
+          <BonusSection />
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper delay={0.2} direction="left">
           <GuaranteeSection />
         </ScrollAnimationWrapper>
 

@@ -20,11 +20,11 @@ export function PromotionalSection({ onCTAClick }: PromotionalSectionProps) {
           </p>
           
           <div className="space-y-2">
-            <p className="text-tertiary/60 line-through text-lg">de R$200,00</p>
-            <div className="text-3xl md:text-6xl font-bricolage font-bold text-secondary tracking-tight">
-              12X R$13,13
-            </div>
-            <p className="text-lg md:text-xl text-tertiary/80">ou R$127,00 à vista.</p>
+                        <p className="text-tertiary/60 line-through text-lg">de R$200,00</p>
+                        <div className="text-3xl md:text-6xl font-bricolage font-bold text-secondary tracking-tight">
+                            12X R$13,13
+                        </div>
+                        <p className="text-lg md:text-xl text-tertiary/80">ou R$127,00 à vista.</p>
           </div>
         </div>
         
